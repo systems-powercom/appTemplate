@@ -414,6 +414,7 @@
 				BF6CC0171A4FE7E7006C473B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF6CC0181A4FE7E7006C473B /* Build configuration list for PBXNativeTarget "appTemplateTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +423,7 @@
 				BF6CC01A1A4FE7E7006C473B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
