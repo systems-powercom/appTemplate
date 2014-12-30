@@ -47,5 +47,20 @@ From iOS8, launch screen is defined as LaunchScreen.xib.
 4. firstView viewDidDisappear
 5. secondView viewDidAppear -- get variables from NSUserDefaults
 
+## How to debug
+
+### Change XCode preferences
+
+To show variables when entering debug mode.
+
+### Set breakpoint
+
+Click the head of the line to set breakpoint.
+
+### Run the app and see the values of variables
+
+You can see the values of variables in the left bottom area.
+Step in button will show you the change of values.
+
 
 
