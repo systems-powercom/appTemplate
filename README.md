@@ -26,5 +26,9 @@ http://makeappicon.com/
 
 - make place holder with the following description <# place holder #>
 
-## 
+## Launch screen
+
+From iOS8, launch screen is defined as LaunchScreen.xib.
+
+
 
