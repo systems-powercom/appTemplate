@@ -18,5 +18,12 @@ http://makeappicon.com/
 
 - add files to Images.xcassets.
 
+## add code snippets
+
+1. Select source code to make snippets
+2. Drag and drop it to code snippets panel
+3. Edit it
+
+- make place holder with the following description <# place holder #>
 
 
