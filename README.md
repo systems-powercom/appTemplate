@@ -97,3 +97,38 @@ or
 LOG(@"message");
 ```
 
+## How to use NSUserDefaults
+
+NSUserDefaults is a convinient way to keep values in the project.
+
+to write values,
+
+```
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    [ud setObject:firstTextField.text forKey:@"key"];
+    [ud synchronize];
+```
+
+to read values,
+
+```
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    NSString * labelText = [ud objectForKey:@"key"];
+```
+
+|---|---|---|
+|Object type|save method|read method|
+|---|---|---|
+|id|setObject: forKey:|objectForKey:|
+|NSString|setObject: forKey:|stringForKey:|
+|NSArray|setObject: forKey:|arrayForKey:|
+|NSArray(String)|setObject: forKey:|stringArrayForKey:|
+|NSDictionary|setObject: forKey:|dictionaryForKey:|
+|NSData|setObject: forKey:|dataForKey:|
+|NSInteger|setInteger: forKey:|integerForKey:|
+|float|setFloat: forKey:|floatForKey:|
+|double|setDouble: forKey:|doubleForKey:|
+|BOOL|setBool: forKey:|boolForKey:|
+|NSURL|setURL: forKey:|URLForKey:|
+|---|---|---|
+
