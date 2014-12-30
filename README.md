@@ -62,5 +62,38 @@ Click the head of the line to set breakpoint.
 You can see the values of variables in the left bottom area.
 Step in button will show you the change of values.
 
+## NSLog replacement
 
+1. Add new file named PrefixHeader.pch to the project
+2. Add these lines to the file
+
+```
+#ifdef DEBUG
+#define LOG(...) NSLog(__VA_ARGS__)
+#define LOG_PRINTF(FORMAT, ...) printf("%s\n", [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#define LOG_METHOD NSLog(@"%s", __func__)
+#define LOG_METHOD_AND_ABORT LOG_METHOD; abort()
+#else
+#define LOG(...)
+#define LOG_PRINTF(FORMAT, ...)
+#define LOG_METHOD
+#define LOG_METHOD_AND_ABORT
+#endif
+```
+
+3. Add this file to the project's Build Setting
+
+4. Use them in the source files
+
+like
+
+```
+LOG_METHOD;
+```
+
+or
+
+```
+LOG(@"message");
+```
 
