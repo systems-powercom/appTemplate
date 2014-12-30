@@ -30,5 +30,22 @@ http://makeappicon.com/
 
 From iOS8, launch screen is defined as LaunchScreen.xib.
 
+## Application launch process
+
+1. application willFinishLaunchingWithOptions
+2. application didFinishLaunchingWithOptions
+3. viewDidLoad
+4. viewWillAppear
+5. viewDidAppear
+6. application applicationDidBecomeActive
+
+## Switch views process
+
+1. secondView viewDidLoad
+2. secondView viewWillAppear
+3. firstView viewWillDisappear -- set variables to NSUserDefaults
+4. firstView viewDidDisappear
+5. secondView viewDidAppear -- get variables from NSUserDefaults
+
 
 

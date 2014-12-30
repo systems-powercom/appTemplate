@@ -15,6 +15,7 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    LOG_METHOD;
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
@@ -22,7 +23,18 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    LOG_METHOD;
+
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    LOG_METHOD;
+
+}
+
 - (void)didReceiveMemoryWarning {
+    LOG_METHOD;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
