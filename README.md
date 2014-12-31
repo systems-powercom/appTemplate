@@ -116,7 +116,6 @@ to read values,
     NSString * labelText = [ud objectForKey:@"key"];
 ```
 
-|---|---|---|
 |Object type|save method|read method|
 |---|---|---|
 |id|setObject: forKey:|objectForKey:|
@@ -130,7 +129,6 @@ to read values,
 |double|setDouble: forKey:|doubleForKey:|
 |BOOL|setBool: forKey:|boolForKey:|
 |NSURL|setURL: forKey:|URLForKey:|
-|---|---|---|
 
 ## appledoc
 
