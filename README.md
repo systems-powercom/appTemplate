@@ -132,3 +132,64 @@ to read values,
 |NSURL|setURL: forKey:|URLForKey:|
 |---|---|---|
 
+## appledoc
+
+To write class document, we can use appledoc.
+
+### How to install
+
+```
+git clone git://github.com/tomaz/appledoc.git
+```
+
+compile it in the folder
+
+```
+sudo mkdir /usr/local/bin
+sudo sh install-appledoc.sh
+```
+
+### How to create files
+
+In the terminal with its folder, type the following.
+
+appledoc --project-name appTemplate --project-company systems-power --company-id com.systems-power --create-docset --output ./docs/ -h appTemplate
+
+#### Global Setting
+
+You can use general file to set project name etc.
+
+Create ~/.appledoc file for store global settings.
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" 
+    "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>--project-company</key>
+    <string>Systems-Power</string>
+    <key>--company-id</key>
+    <string>com.systems-power</string>
+    <key>--create-html</key>
+    <true/>
+    <key>--create-docset</key>
+    <true/>
+    <key>--install-docset</key>
+    <false/>
+</dict>
+</plist>
+```
+
+But they make some errors. I will give up using this file.
+
+### How to read files
+
+Open doc folder, you will see the file named "docset-installed.txt".
+So the documents are installed XCode.
+
+In XCode, option click on the name of the class, you can select reference.
+
+
+
+

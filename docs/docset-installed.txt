@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/jun/Library/Developer/Shared/Documentation/DocSets/com.systems-power.appTemplate.docset
+Time: 2014-12-31 06:04:41 +0000
