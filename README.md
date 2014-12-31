@@ -188,6 +188,4 @@ So the documents are installed XCode.
 
 In XCode, option click on the name of the class, you can select reference.
 
-
-
-
+### 
