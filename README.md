@@ -153,6 +153,8 @@ In the terminal with its folder, type the following.
 
 appledoc --project-name appTemplate --project-company systems-power --company-id com.systems-power --create-docset --output ./docs/ -h appTemplate
 
+It is convinient to make it to shell script file like appledoc.sh.
+
 #### Global Setting
 
 You can use general file to set project name etc.
@@ -188,4 +190,29 @@ So the documents are installed XCode.
 
 In XCode, option click on the name of the class, you can select reference.
 
-### 
+## How to use cocoapod
+
+### How to install
+
+```
+sudo gem install cocoapods
+pod setup
+```
+
+## How to use
+
+Create Podfile like this.
+
+```
+platform :ios
+pod 'JSONKit'
+```
+
+Run the following command.
+
+```
+pod install
+```
+
+Open project with Xcode workspace file.
+
