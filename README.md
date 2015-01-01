@@ -223,21 +223,33 @@ Open project with Xcode workspace file.
 - Select Product - Analyse in menu
 - Check the result
 
-
 ## How to localize apps
 
 Localization is very important for local users. I will summerise about localization of iOS apps.
 
-### storyboard and launch screen
-
-- labels
-- buttons
+### storyboard and launch screen (labels, buttons)
 
 1. Add language in XCode project info
-2. Input localizable strings
-3. Preview in Assistant Editor
+2. Select Main.storyboard and push localize button
+3. Check language to localize
+4. Input localizable strings to Main.storyboard of each language
+5. Preview in Assistant Editor
 
-If you want to change strings programatically, you need to add Localizable.string file.
+### localize programatically
+
+You can use Localizable.strings file
+
+1. Add file named Localizable.strings
+2. Select Localizable.strings and push localize button
+3. Check language to localize
+4. Input localizable strings to Localizable.strings of each language
+
+### app name
+
+1. Add file named InfoPlist.strings
+2. Select InfoPlist.strings and push localize button
+3. Check language to localize
+4. Input localizable strings to InfoPlist.strings of each language
 
 #### export and import localizable strings
 
@@ -245,18 +257,15 @@ Editor -> Export For Localization
 
 You will see xliff files.
 
-### app name
+iOS simulator does not display localized strings. Use real device to check them.
 
-Localize InfoPlist.strings file
+#### app store page
 
+app name, description, keywords, support email address, support URL, marketing URL, privacy policy URL, screen shots
 
+#### translation services
 
-
-app store page
-
-
-
-英語・日本語・フランス語・ドイツ語・スペイン語・ポルトガル語・ハンガリー語・イタリア語・スウェーデン語・デンマーク語・オランダ語・フィンランド語・ノルウェイ語・ロシア語・中国語(繁体字・簡体字)・韓国語
+You can use these services to translate strings
 
 https://www.wordcrafts.de/
 
