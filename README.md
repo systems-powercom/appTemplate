@@ -216,3 +216,49 @@ pod install
 
 Open project with Xcode workspace file.
 
+## Learn how to debug programs
+
+## Analyze project
+
+- Select Product - Analyse in menu
+- Check the result
+
+
+## How to localize apps
+
+Localization is very important for local users. I will summerise about localization of iOS apps.
+
+### storyboard and launch screen
+
+- labels
+- buttons
+
+1. Add language in XCode project info
+2. Input localizable strings
+3. Preview in Assistant Editor
+
+If you want to change strings programatically, you need to add Localizable.string file.
+
+#### export and import localizable strings
+
+Editor -> Export For Localization
+
+You will see xliff files.
+
+### app name
+
+Localize InfoPlist.strings file
+
+
+
+
+app store page
+
+
+
+英語・日本語・フランス語・ドイツ語・スペイン語・ポルトガル語・ハンガリー語・イタリア語・スウェーデン語・デンマーク語・オランダ語・フィンランド語・ノルウェイ語・ロシア語・中国語(繁体字・簡体字)・韓国語
+
+https://www.wordcrafts.de/
+
+https://crowdin.com/page/tour
+

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="appTemplate/Base.lproj/LaunchScreen.xib" source-language="en" datatype="plaintext" target-language="ar">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.1.1" build-num="6A2008a"/>
+    </header>
+    <body>
+      <trans-unit id="8ie-xW-0ye.text">
+        <source>  Copyright (c) 2014 systems-power. All rights reserved.</source>
+        <target>  Copyright (c) 2014 systems-power. All rights reserved.</target>
+        <note>Class = "IBUILabel"; text = "  Copyright (c) 2014 systems-power. All rights reserved."; ObjectID = "8ie-xW-0ye";</note>
+      </trans-unit>
+      <trans-unit id="TL4-zY-L1p.text">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "IBUILabel"; text = "Label"; ObjectID = "TL4-zY-L1p";</note>
+      </trans-unit>
+      <trans-unit id="kId-c2-rCX.text">
+        <source>appTemplate</source>
+        <target>appTemplate</target>
+        <note>Class = "IBUILabel"; text = "appTemplate"; ObjectID = "kId-c2-rCX";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="appTemplate/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext" target-language="ar">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.1.1" build-num="6A2008a"/>
+    </header>
+    <body>
+      <trans-unit id="2hN-Wq-rp5.text">
+        <source>View1</source>
+        <target>View1 ar</target>
+        <note>Class = "IBUILabel"; text = "View1"; ObjectID = "2hN-Wq-rp5";</note>
+      </trans-unit>
+      <trans-unit id="V7F-kn-J6F.normalTitle">
+        <source>Button</source>
+        <target>Button ar</target>
+        <note>Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "V7F-kn-J6F";</note>
+      </trans-unit>
+      <trans-unit id="o9X-r5-tFA.title">
+        <source>Item</source>
+        <target>Item ar</target>
+        <note>Class = "IBUITabBarItem"; title = "Item"; ObjectID = "o9X-r5-tFA";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="appTemplate/Info.plist" source-language="en" datatype="plaintext" target-language="ar">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.1.1" build-num="6A2008a"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="appTemplate/en.lproj/Localizable.strings" source-language="en" datatype="plaintext" target-language="ar">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.1.1" build-num="6A2008a"/>
+    </header>
+    <body/>
+  </file>
+  <file original="appTemplateTests/Info.plist" source-language="en" datatype="plaintext" target-language="ar">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.1.1" build-num="6A2008a"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

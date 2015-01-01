@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF3F8EDC1A54D2DF008D8A32 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF3F8EDE1A54D2DF008D8A32 /* Localizable.strings */; };
 		BF6CBFF81A4FE7E7006C473B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6CBFF71A4FE7E7006C473B /* main.m */; };
 		BF6CBFFB1A4FE7E7006C473B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6CBFFA1A4FE7E7006C473B /* AppDelegate.m */; };
 		BF6CBFFE1A4FE7E7006C473B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6CBFFD1A4FE7E7006C473B /* ViewController.m */; };
@@ -27,8 +28,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF3F8EC81A53ECCF008D8A32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
+		BF3F8ED91A54D29E008D8A32 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BF3F8EDD1A54D2DF008D8A32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BF3F8EDF1A54D2EE008D8A32 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BF3F8EE01A54D2F1008D8A32 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BF3F8EE11A54D2F5008D8A32 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		BF3F8EE21A54D2F6008D8A32 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BF3F8EE31A54D2F8008D8A32 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BF6CBFF21A4FE7E7006C473B /* appTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF6CBFF61A4FE7E7006C473B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF6CBFF71A4FE7E7006C473B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BF6CBFF91A4FE7E7006C473B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF6CBFFA1A4FE7E7006C473B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -36,7 +44,6 @@
 		BF6CBFFD1A4FE7E7006C473B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BF6CC0001A4FE7E7006C473B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF6CC0021A4FE7E7006C473B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		BF6CC0051A4FE7E7006C473B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BF6CC00B1A4FE7E7006C473B /* appTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6CC0101A4FE7E7006C473B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF6CC0111A4FE7E7006C473B /* appTemplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = appTemplateTests.m; sourceTree = "<group>"; };
@@ -97,9 +104,10 @@
 		BF6CBFF51A4FE7E7006C473B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BF6CBFF61A4FE7E7006C473B /* Info.plist */,
+				BF3F8EC91A53ECCF008D8A32 /* Info.plist */,
 				BF6CBFF71A4FE7E7006C473B /* main.m */,
 				BFD5DBB21A5243F000667365 /* PrefixHeader.pch */,
+				BF3F8EDE1A54D2DF008D8A32 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -184,6 +192,11 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
+				de,
+				"zh-Hans",
+				ja,
+				ar,
 			);
 			mainGroup = BF6CBFE91A4FE7E7006C473B;
 			productRefGroup = BF6CBFF31A4FE7E7006C473B /* Products */;
@@ -202,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF6CC0011A4FE7E7006C473B /* Main.storyboard in Resources */,
+				BF3F8EDC1A54D2DF008D8A32 /* Localizable.strings in Resources */,
 				BF6CC0061A4FE7E7006C473B /* LaunchScreen.xib in Resources */,
 				BF6CC0031A4FE7E7006C473B /* Images.xcassets in Resources */,
 			);
@@ -246,6 +260,27 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		BF3F8EC91A53ECCF008D8A32 /* Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF3F8EC81A53ECCF008D8A32 /* Base */,
+			);
+			name = Info.plist;
+			sourceTree = "<group>";
+		};
+		BF3F8EDE1A54D2DF008D8A32 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF3F8EDD1A54D2DF008D8A32 /* Base */,
+				BF3F8EDF1A54D2EE008D8A32 /* fr */,
+				BF3F8EE01A54D2F1008D8A32 /* de */,
+				BF3F8EE11A54D2F5008D8A32 /* zh-Hans */,
+				BF3F8EE21A54D2F6008D8A32 /* ja */,
+				BF3F8EE31A54D2F8008D8A32 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		BF6CBFFF1A4FE7E7006C473B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -257,7 +292,7 @@
 		BF6CC0041A4FE7E7006C473B /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BF6CC0051A4FE7E7006C473B /* Base */,
+				BF3F8ED91A54D29E008D8A32 /* en */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";

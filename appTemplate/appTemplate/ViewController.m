@@ -19,6 +19,9 @@ Main view, which shows UI components.
 
 @implementation ViewController
 
+@synthesize label;
+@synthesize button;
+
 /**
  The first method to call.
  
@@ -27,7 +30,6 @@ Main view, which shows UI components.
     LOG_METHOD;
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-
 
     
 }
@@ -39,6 +41,9 @@ Main view, which shows UI components.
  */
 - (void)viewWillAppear:(BOOL)animated{
     LOG_METHOD;
+    [super viewWillAppear:YES];
+    [label setText:NSLocalizedString(@"labelText", nil)];
+    [button setTitle:NSLocalizedString(@"buttonText", nil) forState:UIControlStateNormal];
 
 }
 
@@ -48,6 +53,7 @@ Main view, which shows UI components.
  */
 - (void)viewDidAppear:(BOOL)animated{
     LOG_METHOD;
+    [super viewDidAppear:YES];
 
 }
 

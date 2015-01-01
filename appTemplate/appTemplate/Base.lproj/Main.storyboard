@@ -16,22 +16,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7F-kn-J6F">
-                                <rect key="frame" x="277" y="28" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7F-kn-J6F">
+                                <rect key="frame" x="160" y="28" width="281" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="co9-4f-c3t"/>
+                                    <constraint firstAttribute="width" constant="281" id="ydS-o4-SCF"/>
+                                </constraints>
+                                <state key="normal" title="b">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="View1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hN-Wq-rp5">
-                                <rect key="frame" x="279" y="66" width="46" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hN-Wq-rp5">
+                                <rect key="frame" x="160" y="66" width="281" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="281" id="hIL-I9-79P"/>
+                                    <constraint firstAttribute="height" constant="21" id="qku-TH-nJe"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="2hN-Wq-rp5" secondAttribute="centerX" id="9W8-b2-vYK"/>
+                            <constraint firstItem="V7F-kn-J6F" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Aba-zS-rf9"/>
+                            <constraint firstAttribute="centerX" secondItem="V7F-kn-J6F" secondAttribute="centerX" id="bPJ-IK-Rot"/>
+                            <constraint firstItem="2hN-Wq-rp5" firstAttribute="top" secondItem="V7F-kn-J6F" secondAttribute="bottom" constant="8" id="n8w-gV-tCS"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="o9X-r5-tFA"/>
+                    <connections>
+                        <outlet property="button" destination="V7F-kn-J6F" id="ODR-hA-nxZ"/>
+                        <outlet property="label" destination="2hN-Wq-rp5" id="fsx-ju-ab0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
