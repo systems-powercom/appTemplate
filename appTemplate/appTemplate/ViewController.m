@@ -42,8 +42,8 @@ Main view, which shows UI components.
 - (void)viewWillAppear:(BOOL)animated{
     LOG_METHOD;
     [super viewWillAppear:YES];
-    [label setText:NSLocalizedString(@"labelText", nil)];
-    [button setTitle:NSLocalizedString(@"buttonText", nil) forState:UIControlStateNormal];
+    //[label setText:NSLocalizedString(@"labelText", nil)];
+    //[button setTitle:NSLocalizedString(@"buttonText", nil) forState:UIControlStateNormal];
 
 }
 
