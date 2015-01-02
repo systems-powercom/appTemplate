@@ -271,3 +271,13 @@ https://www.wordcrafts.de/
 
 https://crowdin.com/page/tour
 
+## Settings screen
+
+To add settings screen, add Settings.bundle to the project.
+In the Settings.bundle folder, you can see Root.plist and Root.strings files.
+In the Root.plist, you can add items. the name is defined in the Root.strings file.
+
+To localize the strings, open the project folder in finder, select Settings.bundle file and right click and open package.
+
+Add folder named local language like ja.lproj and copy Root.strings file to the folder.
+

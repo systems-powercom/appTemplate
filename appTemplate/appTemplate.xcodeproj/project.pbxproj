@@ -17,6 +17,7 @@
 		BF6CC0031A4FE7E7006C473B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6CC0021A4FE7E7006C473B /* Images.xcassets */; };
 		BF6CC0061A4FE7E7006C473B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF6CC0041A4FE7E7006C473B /* LaunchScreen.xib */; };
 		BF6CC0121A4FE7E7006C473B /* appTemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6CC0111A4FE7E7006C473B /* appTemplateTests.m */; };
+		BFB53B5D1A56898A00F38511 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BFB53B5C1A56898A00F38511 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		BF6CC00B1A4FE7E7006C473B /* appTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6CC0101A4FE7E7006C473B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF6CC0111A4FE7E7006C473B /* appTemplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = appTemplateTests.m; sourceTree = "<group>"; };
+		BFB53B5C1A56898A00F38511 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		BFD5DBB21A5243F000667365 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +129,7 @@
 				BFD5DBB21A5243F000667365 /* PrefixHeader.pch */,
 				BF3F8EDE1A54D2DF008D8A32 /* Localizable.strings */,
 				BF3F8EFB1A54E2F0008D8A32 /* InfoPlist.strings */,
+				BFB53B5C1A56898A00F38511 /* Settings.bundle */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				BF6CC0061A4FE7E7006C473B /* LaunchScreen.xib in Resources */,
 				BF3F8EF61A54E244008D8A32 /* Info.plist in Resources */,
 				BF6CC0031A4FE7E7006C473B /* Images.xcassets in Resources */,
+				BFB53B5D1A56898A00F38511 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
