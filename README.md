@@ -281,3 +281,13 @@ To localize the strings, open the project folder in finder, select Settings.bund
 
 Add folder named local language like ja.lproj and copy Root.strings file to the folder.
 
+## Adjust Text position
+
+### for UILabel
+
+Use sizeWithFont:constrainedToSize:lineBreakMode: method to get size, and change height frame.
+
+### for UITextView
+
+Use contentSize property to get size.
+

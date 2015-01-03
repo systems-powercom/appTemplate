@@ -54,6 +54,14 @@ Main view, which shows UI components.
 - (void)viewDidAppear:(BOOL)animated{
     LOG_METHOD;
     [super viewDidAppear:YES];
+    
+    CGRect frame;
+    CGSize size;
+    
+    frame = self.label.frame;
+    size = [self.label.text sizeWithFont:self.label.font constrainedToSize:CGSizeMake(200, 100) lineBreakMode:NSLineBreakByWordWrapping];
+    frame.size.height = size.height;
+    self.label.frame = frame;
 
 }
 
