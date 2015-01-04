@@ -18,6 +18,7 @@
 		BF6CC0061A4FE7E7006C473B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF6CC0041A4FE7E7006C473B /* LaunchScreen.xib */; };
 		BF6CC0121A4FE7E7006C473B /* appTemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6CC0111A4FE7E7006C473B /* appTemplateTests.m */; };
 		BFB53B5D1A56898A00F38511 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BFB53B5C1A56898A00F38511 /* Settings.bundle */; };
+		BFF65E941A58CC2E00E5CF9B /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF65E931A58CC2E00E5CF9B /* DataModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		BF6CC0111A4FE7E7006C473B /* appTemplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = appTemplateTests.m; sourceTree = "<group>"; };
 		BFB53B5C1A56898A00F38511 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		BFD5DBB21A5243F000667365 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		BFF65E921A58CC2E00E5CF9B /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		BFF65E931A58CC2E00E5CF9B /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				BF6CC0021A4FE7E7006C473B /* Images.xcassets */,
 				BF6CC0041A4FE7E7006C473B /* LaunchScreen.xib */,
 				BF6CBFF51A4FE7E7006C473B /* Supporting Files */,
+				BFF65E921A58CC2E00E5CF9B /* DataModel.h */,
+				BFF65E931A58CC2E00E5CF9B /* DataModel.m */,
 			);
 			path = appTemplate;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF6CBFFE1A4FE7E7006C473B /* ViewController.m in Sources */,
+				BFF65E941A58CC2E00E5CF9B /* DataModel.m in Sources */,
 				BF6CBFFB1A4FE7E7006C473B /* AppDelegate.m in Sources */,
 				BF6CBFF81A4FE7E7006C473B /* main.m in Sources */,
 			);

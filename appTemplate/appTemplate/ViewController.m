@@ -21,6 +21,7 @@ Main view, which shows UI components.
 
 @synthesize label;
 @synthesize button;
+@synthesize dataModel;
 
 /**
  The first method to call.
@@ -62,6 +63,15 @@ Main view, which shows UI components.
     size = [self.label.text sizeWithFont:self.label.font constrainedToSize:CGSizeMake(200, 100) lineBreakMode:NSLineBreakByWordWrapping];
     frame.size.height = size.height;
     self.label.frame = frame;
+    
+    [label setText:@"aaaaa"];
+    
+    if ([dataModel checkNumbers:@10 withNumber:@9]){
+        LOG(@"same numbers");
+    }else{
+        LOG(@"not same numbers");
+        
+    }
 
 }
 

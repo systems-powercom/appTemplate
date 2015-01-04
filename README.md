@@ -295,3 +295,9 @@ Use contentSize property to get size.
 
 use iConsole to check logs in a device.
 
+## Unit test
+
+You can run unit test with menu Product - Test or command U.
+
+Create test case in projectTests file. XCTAssertTrue can identify the boolean value.
+

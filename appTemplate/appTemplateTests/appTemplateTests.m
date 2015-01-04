@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "DataModel.h"
 
 @interface appTemplateTests : XCTestCase
 
@@ -28,6 +29,18 @@
 - (void)testExample {
     // This is an example of a functional test case.
     XCTAssert(YES, @"Pass");
+    
+    int a = 10;
+    int b = 10;
+    int c = 5;
+    
+    XCTAssertEqual(a, b, "is a equal b?");
+    XCTAssertNotEqual(a, c, "is not a equal c?");
+    
+    DataModel* dataModel = [DataModel new];
+    
+    
+    XCTAssertTrue([dataModel checkNumbers:@10 withNumber:@10]);
 }
 
 - (void)testPerformanceExample {
