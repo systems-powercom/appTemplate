@@ -301,3 +301,8 @@ You can run unit test with menu Product - Test or command U.
 
 Create test case in projectTests file. XCTAssertTrue can identify the boolean value.
 
+## UI test
+
+You can run UI test with automation tool.
+The test case should be written in javascript.
+
