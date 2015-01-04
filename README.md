@@ -291,3 +291,7 @@ Use sizeWithFont:constrainedToSize:lineBreakMode: method to get size, and change
 
 Use contentSize property to get size.
 
+## Check logs in a device
+
+use iConsole to check logs in a device.
+
