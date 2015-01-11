@@ -306,3 +306,8 @@ Create test case in projectTests file. XCTAssertTrue can identify the boolean va
 You can run UI test with automation tool.
 The test case should be written in javascript.
 
+## Check Memory Leak
+
+Select Product -> Profile and Run Leak.
+CHeck memory leak.
+
