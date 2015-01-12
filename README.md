@@ -322,3 +322,12 @@ second view controller with button to connect exit.
 
 By Embedding tabbar, you can create tabbar application.
 
+## TableView Application
+
+The basic technique to use tableview is,
+
+- Add tableViewController
+- Add navigationController
+- Add detailViewController
+- Define prepareForSegue
+
