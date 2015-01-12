@@ -9,7 +9,8 @@
 #import "DataModel.h"
 
 @implementation DataModel
-
+@synthesize name;
+@synthesize number;
 
 
 - (BOOL) checkNumbers:(NSNumber*)num1 withNumber:(NSNumber*)num2{

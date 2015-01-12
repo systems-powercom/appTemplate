@@ -331,3 +331,7 @@ The basic technique to use tableview is,
 - Add detailViewController
 - Define prepareForSegue
 
+## key-value observing
+
+I tried to use but unsolved error happend.
+

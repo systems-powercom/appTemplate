@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DataModel.h"
 
 @interface ViewController ()
 
@@ -32,8 +33,20 @@ Main view, which shows UI components.
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
+    //DataModel* dataModelObserved = [[DataModel alloc] init];
+    //[dataModelObserved addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
+    
+    //dataModelObserved.name = @"alice";
     
 }
+
+/*
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
+    if ([keyPath isEqual:@"name"]) {
+        //NSLog(@"name changed : %@", ((DataModel*)object).name);
+    }
+}
+ */
 
 /**
  The method when the view will appear
