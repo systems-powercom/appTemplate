@@ -318,3 +318,7 @@ From iOS6 and Xcode 4.5, you can unwind viewControllers.
 Add unwind method to main view controller, and call this method from
 second view controller with button to connect exit.
 
+## TabBar Application
+
+By Embedding tabbar, you can create tabbar application.
+
