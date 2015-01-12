@@ -84,4 +84,10 @@ Main view, which shows UI components.
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)back:(UIStoryboardSegue *)segue{
+    LOG_METHOD;
+    NSLog(@"back");
+}
+
+
 @end

@@ -17,6 +17,7 @@
 		BF6CC0031A4FE7E7006C473B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6CC0021A4FE7E7006C473B /* Images.xcassets */; };
 		BF6CC0061A4FE7E7006C473B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF6CC0041A4FE7E7006C473B /* LaunchScreen.xib */; };
 		BF6CC0121A4FE7E7006C473B /* appTemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6CC0111A4FE7E7006C473B /* appTemplateTests.m */; };
+		BF9F19601A63721C0068ABAA /* secondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F195F1A63721C0068ABAA /* secondViewController.m */; };
 		BFB53B5D1A56898A00F38511 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BFB53B5C1A56898A00F38511 /* Settings.bundle */; };
 		BFF65E941A58CC2E00E5CF9B /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF65E931A58CC2E00E5CF9B /* DataModel.m */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,8 @@
 		BF6CC00B1A4FE7E7006C473B /* appTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6CC0101A4FE7E7006C473B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF6CC0111A4FE7E7006C473B /* appTemplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = appTemplateTests.m; sourceTree = "<group>"; };
+		BF9F195E1A63721C0068ABAA /* secondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondViewController.h; sourceTree = "<group>"; };
+		BF9F195F1A63721C0068ABAA /* secondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondViewController.m; sourceTree = "<group>"; };
 		BFB53B5C1A56898A00F38511 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		BFD5DBB21A5243F000667365 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		BFF65E921A58CC2E00E5CF9B /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
@@ -122,6 +125,8 @@
 				BF6CBFF51A4FE7E7006C473B /* Supporting Files */,
 				BFF65E921A58CC2E00E5CF9B /* DataModel.h */,
 				BFF65E931A58CC2E00E5CF9B /* DataModel.m */,
+				BF9F195E1A63721C0068ABAA /* secondViewController.h */,
+				BF9F195F1A63721C0068ABAA /* secondViewController.m */,
 			);
 			path = appTemplate;
 			sourceTree = "<group>";
@@ -269,6 +274,7 @@
 				BFF65E941A58CC2E00E5CF9B /* DataModel.m in Sources */,
 				BF6CBFFB1A4FE7E7006C473B /* AppDelegate.m in Sources */,
 				BF6CBFF81A4FE7E7006C473B /* main.m in Sources */,
+				BF9F19601A63721C0068ABAA /* secondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

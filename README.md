@@ -309,5 +309,12 @@ The test case should be written in javascript.
 ## Check Memory Leak
 
 Select Product -> Profile and Run Leak.
-CHeck memory leak.
+Check memory leak.
+
+## Storyboard unwind
+
+From iOS6 and Xcode 4.5, you can unwind viewControllers.
+
+Add unwind method to main view controller, and call this method from
+second view controller with button to connect exit.
 
