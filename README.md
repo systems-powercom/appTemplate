@@ -333,5 +333,7 @@ The basic technique to use tableview is,
 
 ## key-value observing
 
-I tried to use but unsolved error happend.
+I tried to use but unsolved error happened.
+
+But I have defined observed object in advance, no error happened.
 
