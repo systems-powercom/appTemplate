@@ -337,3 +337,50 @@ I tried to use but unsolved error happened.
 
 But I have defined observed object in advance, no error happened.
 
+## How to use SQLite
+
+- Create project
+- Create Podfile
+
+```
+pod 'FMDB'
+```
+
+- run pod install
+
+```
+pod install
+```
+
+Open sqlitetest.xcworkspace to open project.
+
+Add libsqlite3.0.dylib to project
+
+### How to check db contents in mac
+
+- install firefox
+- install SQLite Manager, addon
+- open home folder in finder
+- select view - view option 
+- check to display library folder
+- open SQLite Manager
+- open db
+
+### select data from database
+
+see source files.
+
+FMResultSet has many methods to retrieve data in an appropriate format:
+
+intForColumn:
+longForColumn:
+longLongIntForColumn:
+boolForColumn:
+doubleForColumn:
+stringForColumn:
+dateForColumn:
+dataForColumn:
+dataNoCopyForColumn:
+UTF8StringForColumnName:
+objectForColumnName:
+
