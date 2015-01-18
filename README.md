@@ -424,5 +424,42 @@ NSString* jsonDataString = [[NSString alloc] initWithData:jsonData encoding:NSUT
 NSLog(@"jsonData string: %@", jsonDataString);
 ```
 
+## Use XML Data
 
-  
+add delegate to .h file
+
+```
+<NSXMLParserDelegate>
+```
+
+### parse xml data
+
+```
+    NSString* xmlString = @"<?xml version=\"1.0\" encoding=\"UTF-8\"?><users><user name=\"hoge\" age=\"20\" /><user name=\"fuga\" age=\"30\" /></users>";
+    NSData *xmlData = [xmlString dataUsingEncoding:NSUnicodeStringEncoding];
+    NSXMLParser* parser = [[NSXMLParser alloc] initWithData:xmlData];
+    [parser setDelegate:self];
+    [parser parse];
+```
+
+### add delegate method
+
+```
+- (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
+{
+    if (qName) {
+        elementName = qName;
+    }
+    if ([elementName isEqualToString:@"user"]) {
+        NSLog(@"Name is %@ , Age is %@", [attributeDict objectForKey:@"name"], [attributeDict objectForKey:@"age"]);
+    }
+}
+
+- (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
+{
+    if (qName) {
+        elementName = qName;
+    }
+}
+```
+
