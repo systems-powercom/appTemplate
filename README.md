@@ -384,3 +384,45 @@ dataNoCopyForColumn:
 UTF8StringForColumnName:
 objectForColumnName:
 
+## How to use JSON
+
+No additional library is need to use JSON data
+
+JSON String is described as following,
+
+```
+ str = @"[{\"title\":\"aaa\", \"content\":\"bbb\"}, {\"title\":\"ccc\", \"content\":\"ddd\"}]";
+```
+
+### from JSON String to array
+
+translate NSString to  NSData and NSArray
+
+```
+NSData *jsonData = [str dataUsingEncoding:NSUnicodeStringEncoding];
+NSError *error;
+NSArray *array = [NSJSONSerialization JSONObjectWithData:jsonData
+                                                 options:NSJSONReadingAllowFragments
+                                                   error:&error];
+```
+
+get obj from array
+    
+```
+for (NSDictionary *obj in array)
+{
+    NSLog(@"title = %@", [obj objectForKey:@"title"]);
+}
+
+### from JSON data to NSString 
+
+```
+jsonData = [NSJSONSerialization dataWithJSONObject:array
+                                           options:NSJSONWritingPrettyPrinted
+                                             error:&error];
+NSString* jsonDataString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+NSLog(@"jsonData string: %@", jsonDataString);
+```
+
+
+  

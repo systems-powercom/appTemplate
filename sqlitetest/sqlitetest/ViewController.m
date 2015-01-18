@@ -65,6 +65,39 @@
     
     [database close];
     
+    // file write
+    NSString* value = @"Hello";
+    NSData* data = [value dataUsingEncoding:NSUTF8StringEncoding];
+
+    //NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    //NSString *docsPath = [paths objectAtIndex:0];
+    NSString *filePath = [docsPath stringByAppendingPathComponent:@"msg.txt"];
+
+    //NSString* bundlePath = [[NSBundle mainBundle] bundlePath];
+    //NSString* filePath = [bundlePath stringByAppendingPathComponent:@"msg.txt"];
+    NSLog(@"file path = %@", filePath);
+    [[NSFileManager defaultManager] createFileAtPath:filePath contents:nil attributes:nil];
+    NSFileHandle* handle;
+    @try {
+        handle = [NSFileHandle fileHandleForWritingAtPath:filePath];
+        [handle writeData:data];
+    }
+    @finally {
+        [handle closeFile];
+    }
+    
+    // file read
+    @try{
+        handle = [NSFileHandle fileHandleForReadingAtPath:filePath];
+        NSData* dataRead = [handle readDataToEndOfFile];
+        NSString* valueRead = [[NSString alloc] initWithData:dataRead encoding:NSUTF8StringEncoding];
+        NSLog(@"read data = %@", valueRead);
+    }@finally{
+        [handle closeFile];
+    }
+    
+
+    
 }
 
 - (void)didReceiveMemoryWarning {
