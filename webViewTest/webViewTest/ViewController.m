@@ -18,13 +18,25 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    //NSURL * url = [NSURL URLWithString:@"http://www.oreilly.com"];
-    NSURL * url = [NSURL URLWithString:@"http://url.has.basic.auth"];
+    NSURL * url = [NSURL URLWithString:@"http://www.yahoo.com"];
+    //NSURL * url = [NSURL URLWithString:@"http://url.has.basic.auth"];
     NSURLRequest * request = [NSURLRequest requestWithURL:url];
     
+    NSHTTPURLResponse * response;
+    NSError * error;
+    NSData * data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    NSDictionary * headers = [response allHeaderFields];
+    NSLog(@"Headers = %@", headers);
+    NSArray * cookies = [NSHTTPCookie cookiesWithResponseHeaderFields:headers forURL:url];
+    for (NSHTTPCookie * cookie in cookies) {
+        NSLog(@"cookie = %@", cookie);
+        if ([[cookie name] isEqualToString:@"JSESSIONID"]) {
+            NSLog(@"session id");
+        }
+    }
    
-    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:[NSURLRequest requestWithURL:url] delegate:self];
-    [connection start];
+    //NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:[NSURLRequest requestWithURL:url] delegate:self];
+    //[connection start];
     
     _webView.delegate = self;
     [_webView loadRequest:request];

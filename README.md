@@ -521,6 +521,29 @@ Add this method to method file.
 }
 ```
 
+## How to get cookies
+
+Add the following source to method file
+
+```
+    NSURL * url = [NSURL URLWithString:@"http://www.yahoo.com"];
+    //NSURL * url = [NSURL URLWithString:@"http://url.has.basic.auth"];
+    NSURLRequest * request = [NSURLRequest requestWithURL:url];
+    
+    NSHTTPURLResponse * response;
+    NSError * error;
+    NSData * data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    NSDictionary * headers = [response allHeaderFields];
+    NSLog(@"Headers = %@", headers);
+    NSArray * cookies = [NSHTTPCookie cookiesWithResponseHeaderFields:headers forURL:url];
+    for (NSHTTPCookie * cookie in cookies) {
+        NSLog(@"cookie = %@", cookie);
+        if ([[cookie name] isEqualToString:@"JSESSIONID"]) {
+            NSLog(@"session id");
+        }
+    }
+```
+
 
 
 
