@@ -413,6 +413,7 @@ for (NSDictionary *obj in array)
 {
     NSLog(@"title = %@", [obj objectForKey:@"title"]);
 }
+```
 
 ### from JSON data to NSString 
 
