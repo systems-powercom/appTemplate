@@ -489,5 +489,38 @@ Add this method to method file.
 }
 ```
 
+## How to use basic auth
+
+- Add NSURLConnectionDelegate to header file.
+- Add source to method file
+
+```
+    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:[NSURLRequest requestWithURL:url] delegate:self];
+    [connection start];
+```
+
+- Add method to method file.
+
+```
+-(void)connection:(NSURLConnection*)connection willSendRequestForAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge{
+    NSLog(@"willSendRequestForAuthenticationChallenge");
+    
+    if (challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodHTTPBasic) {
+        if (challenge.previousFailureCount == 0) {
+            NSURLCredential *creds = [[NSURLCredential alloc] initWithUser:@"username" password:@"password" persistence:NSURLCredentialPersistenceForSession];
+            [challenge.sender useCredential:creds forAuthenticationChallenge:challenge];
+        }
+    }else{
+        [[challenge sender] cancelAuthenticationChallenge:challenge];
+        NSLog(@"invalid username or password");
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"invalid credentials");
+            
+        });
+    }
+}
+```
+
+
 
 

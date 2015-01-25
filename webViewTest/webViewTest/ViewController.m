@@ -18,8 +18,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NSURL * url = [NSURL URLWithString:@"http://www.oreilly.com"];
+    //NSURL * url = [NSURL URLWithString:@"http://www.oreilly.com"];
+    NSURL * url = [NSURL URLWithString:@"http://url.has.basic.auth"];
     NSURLRequest * request = [NSURLRequest requestWithURL:url];
+    
+   
+    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:[NSURLRequest requestWithURL:url] delegate:self];
+    [connection start];
+    
     _webView.delegate = self;
     [_webView loadRequest:request];
 }
@@ -34,5 +40,24 @@
     NSString * title = [_webView stringByEvaluatingJavaScriptFromString:@"document.title"];
     NSLog(@"title = %@", title);
 }
+
+-(void)connection:(NSURLConnection*)connection willSendRequestForAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge{
+    NSLog(@"willSendRequestForAuthenticationChallenge");
+    
+    if (challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodHTTPBasic) {
+        if (challenge.previousFailureCount == 0) {
+            NSURLCredential *creds = [[NSURLCredential alloc] initWithUser:@"username" password:@"password" persistence:NSURLCredentialPersistenceForSession];
+            [challenge.sender useCredential:creds forAuthenticationChallenge:challenge];
+        }
+    }else{
+        [[challenge sender] cancelAuthenticationChallenge:challenge];
+        NSLog(@"invalid username or password");
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"invalid credentials");
+            
+        });
+    }
+}
+
 
 @end
