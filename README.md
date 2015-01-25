@@ -463,3 +463,31 @@ add delegate to .h file
 }
 ```
 
+## How to load HTML document
+
+- Add UIWebViewDelegate to header file.
+- Add UIWebView to storyboard.
+- Make connection from UIWebView to header file (outlet).
+- Add source to method file
+
+```
+    NSURL * url = [NSURL URLWithString:@"http://www.oreilly.com"];
+    NSURLRequest * request = [NSURLRequest requestWithURL:url];
+    _webView.delegate = self;
+    [_webView loadRequest:request];
+```
+
+Run this project, you will see the page is loaded.
+
+Add this method to method file.
+
+```
+-(void)webViewDidFinishLoad:(UIWebView *)webView{
+    NSLog(@"webview did finish load");
+    NSString * title = [_webView stringByEvaluatingJavaScriptFromString:@"document.title"];
+    NSLog(@"title = %@", title);
+}
+```
+
+
+
