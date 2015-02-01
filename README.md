@@ -563,6 +563,33 @@ Load data from keychain like this.
 _password = [SSKeychain passwordForService:@"SecureForm" account:_username];
 ```
 
+### How to use iTunes file shareing
+
+Add row "Application supports iTunes file sharing" in info.plist and set YES.
+
+To save data, use the following code.
+
+```
+   NSString *dir = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
+    
+    NSString *content = @"App wrote this text.";
+    NSData *data = [content dataUsingEncoding:NSUTF8StringEncoding];
+    NSString *filePath = [NSString stringWithFormat:@"%@/test.txt", dir];
+    [data writeToFile:filePath atomically:YES];
+```
+
+To load data, use the following code.
+
+```
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSString *dir = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
+    NSString *filePath = [NSString stringWithFormat:@"%@/test2.txt", dir];
+    if ([fileManager fileExistsAtPath:filePath]) {
+        NSData *data = [NSData dataWithContentsOfFile:filePath];
+        NSString *text = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        _textView.text = text;
+```
+
 
 
 
