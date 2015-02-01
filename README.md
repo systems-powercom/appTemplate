@@ -545,6 +545,25 @@ Add the following source to method file
     }
 ```
 
+### How to save password safe
+
+Use keychain to save password.
+
+To use keychain, use SSKeychain, wrapper for keychain.
+
+Add SSKeychain with cocoa pods, import file and save data like this.
+
+```
+[SSKeychain setPassword:_passwordTextField.text forService:@"SecureForm" account:_usernameTextField.text];
+```
+
+Load data from keychain like this.
+
+```
+_password = [SSKeychain passwordForService:@"SecureForm" account:_username];
+```
+
+
 
 
 
