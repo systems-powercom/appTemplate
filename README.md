@@ -590,6 +590,10 @@ To load data, use the following code.
         _textView.text = text;
 ```
 
+### How to create camera app
+
+See project files.
+
 
 
 
