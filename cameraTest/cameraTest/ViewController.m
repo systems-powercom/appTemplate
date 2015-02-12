@@ -121,6 +121,7 @@
     MPVolumeView *volumeView = [[MPVolumeView alloc] initWithFrame:frame];
     NSArray *windows = [[UIApplication sharedApplication] windows];
     [[windows objectAtIndex:0] addSubview:volumeView];
+    
 
 }
 
@@ -160,13 +161,13 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
     
     
     // 設定してあったシステムボリュームを退避しておく
-    orgVolume = [MPMusicPlayerController applicationMusicPlayer].volume;
+    //orgVolume = [MPMusicPlayerController applicationMusicPlayer].volume;
     
     // システムボリュームを一時的に変更
-    [MPMusicPlayerController applicationMusicPlayer].volume = 0.1f;
+    //[MPMusicPlayerController applicationMusicPlayer].volume = 0.1f;
     
     // AVAudioPlayerでシャッター音を再生
-    [self.audioPlayer play];
+    //[self.audioPlayer play];
     
     
     CVPixelBufferRef pixbuff = CMSampleBufferGetImageBuffer(sampleBuffer);
@@ -209,7 +210,7 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag {
     
     // 退避しておいたシステムボリュームを元に戻す
-    [MPMusicPlayerController applicationMusicPlayer].volume = orgVolume;
+    //[MPMusicPlayerController applicationMusicPlayer].volume = orgVolume;
 }
 
 
