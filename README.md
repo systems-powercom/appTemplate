@@ -644,4 +644,8 @@ Insert the following source to application didFinishLaunchingWithOptions
 
 See the reminderTest project source.
 
+## How to set swipe gesture
+
+See the swipeTest project source.
+
 
