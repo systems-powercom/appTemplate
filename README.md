@@ -640,4 +640,8 @@ Insert the following source to application didFinishLaunchingWithOptions
 }
 ```
 
+### How to use reminder
+
+See the reminderTest project source.
+
 
