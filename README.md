@@ -606,3 +606,38 @@ Insert the following source to application didFinishLaunchingWithOptions
     [versionUpdater executeVersionCheck];
 ```
 
+### How to use address book data
+
+```
+#import <AddressBook/AddressBook.h>
+#import <AddressBookUI/AddressBookUI.h>
+```
+
+```
+@property(nonatomic, strong) ABPeoplePickerNavigationController * picker;
+```
+
+```
+    picker = [[ABPeoplePickerNavigationController alloc] init];
+    picker.displayedProperties = @[@(kABPersonEmailProperty)];
+    picker.peoplePickerDelegate = self;
+    
+    [self presentViewController:picker animated:YES completion:^{}];
+```
+
+```
+- (void)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker didSelectPerson:(ABRecordRef)person property:(ABPropertyID)property identifier:(ABMultiValueIdentifier)identifier{
+    NSLog(@"didSelectPerson");
+
+    if(property == kABPersonEmailProperty){
+        ABMutableMultiValueRef multi = ABRecordCopyValue(person, property);
+        CFStringRef email = ABMultiValueCopyValueAtIndex(multi, identifier);
+        NSLog(@"email %@", (__bridge NSString *)email);
+        // Do your tasks here
+        CFRelease(email);
+    }
+    
+}
+```
+
+
