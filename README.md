@@ -594,7 +594,15 @@ To load data, use the following code.
 
 See project files.
 
+### How to introduce version check
 
+Use SRGVersionUpdater.
 
+Insert the following source to application didFinishLaunchingWithOptions
 
+```
+    SRGVersionUpdater *versionUpdater = [SRGVersionUpdater new];
+    versionUpdater.endPointUrl = @"http://systems-power.com/appSettings/versionCheck.json";
+    [versionUpdater executeVersionCheck];
+```
 
