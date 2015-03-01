@@ -648,4 +648,27 @@ See the reminderTest project source.
 
 See the swipeTest project source.
 
+## How to use UIRefreshControl
+
+Add the following code to viewDidLoad.
+
+```
+UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self
+                       action:@selector(onRefresh:)
+             forControlEvents:UIControlEventValueChanged];
+    [self.tableView addSubview:refreshControl];
+```
+
+And add the following method
+
+```
+- (void)onRefresh:(UIRefreshControl *)refreshControl
+{
+    [refreshControl beginRefreshing];
+    NSLog(@"start refreshing");
+    [refreshControl endRefreshing];
+}
+```
+
 
